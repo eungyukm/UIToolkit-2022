@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UIElements.Button;
 
-namespace UIToolkitDemo
+namespace DragonProject
 {
     public class MainMenuController : MonoBehaviour
     {
@@ -30,6 +30,8 @@ namespace UIToolkitDemo
         private Texture2D SwordMasterImg;
         private Texture2D MagicMasterImg;
         private Texture2D HealMasterImg;
+
+        [SerializeField] private EquipmentSO equipmentSO;
         
         private enum MainMenuState
         {
@@ -68,6 +70,8 @@ namespace UIToolkitDemo
             
             UIInit();
             
+            Debug.Log("name : " + equipmentSO.name);
+            Debug.Log("damage : " + equipmentSO.damage);
         }
 
         private void UIInit()

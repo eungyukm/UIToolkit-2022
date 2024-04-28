@@ -1,0 +1,17 @@
+.unity-custom-label {
+    font-size: 40px;
+}
+
+.char__main-container {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    left: 7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroes-button-size {
+    width: 200px;
+    height: 200px;
+}

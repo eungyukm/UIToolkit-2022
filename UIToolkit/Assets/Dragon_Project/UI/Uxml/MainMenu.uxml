@@ -1,4 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Dragon_Project/UI/Uss/main_uss.uss?fileID=7433441132597879392&amp;guid=f1375d1e016cd4577b763713148652ee&amp;type=3#main_uss" />
     <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
         <ui:VisualElement name="main__left-container" style="flex-direction: column-reverse; height: 100%; width: 180px;">
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="main__left-scroll-button" style="background-image: url(&apos;project://database/Assets/UI/Textures/Misc/icon-scroll.png?fileID=2800000&amp;guid=98e7760a6c3534c68897c4b4b6effa44&amp;type=3#icon-scroll&apos;); width: 100%; height: 140px; padding-top: 0; margin-top: 10px;" />
@@ -11,10 +12,17 @@
             <ui:VisualElement name="main__shild" style="flex-grow: 1; background-color: rgba(166, 137, 40, 0.55); width: 100%; height: 100%; display: none; visibility: visible; overflow: hidden;" />
             <ui:VisualElement name="main__sword" style="flex-grow: 1; background-color: rgba(78, 185, 50, 0.76); overflow: visible; width: 100%; height: 100%; display: none;" />
             <ui:VisualElement name="main__heroes" style="flex-grow: 1; background-color: rgba(51, 110, 204, 0.66); width: 100%; height: 100%; display: flex; align-items: center; -unity-background-scale-mode: scale-to-fit;">
-                <ui:VisualElement style="flex-grow: 1; flex-direction: row; width: 100%; height: 100%; align-items: center;">
-                    <ui:Button text="Prev" parse-escape-sequences="true" display-tooltip-when-elided="true" name="main__heroes-prev-button" style="width: 176px; height: 100px; font-size: 50px;" />
-                    <ui:VisualElement name="main__heroes-image" style="flex-grow: 1; width: 100%; height: 100%; background-color: rgba(219, 18, 18, 0.64); align-items: auto; background-image: url(&apos;project://database/Assets/Dragon_Project/Resoureces/Img/Sword_Master.png?fileID=2800000&amp;guid=8da5c257b6a8e469086d29193f760b0f&amp;type=3#Sword_Master&apos;); -unity-background-scale-mode: scale-to-fit;" />
-                    <ui:Button text="Next" parse-escape-sequences="true" display-tooltip-when-elided="true" name="main__heroes-next-button" style="font-size: 50px;" />
+                <ui:VisualElement name="main__heroes-row" style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgb(236, 0, 0);" />
+                    <ui:VisualElement name="main__heroes-character" style="flex-grow: 1; flex-direction: row; width: 40%; height: 100%; align-items: center;">
+                        <ui:Button text="Prev" parse-escape-sequences="true" display-tooltip-when-elided="true" name="main__heroes-prev-button" class="unity-custom-label" style="width: 176px; height: 100px; display: none;" />
+                        <ui:VisualElement name="main__heroes-image" style="flex-grow: 1; width: 51%; height: 100%; background-color: rgba(219, 18, 18, 0.64); align-items: auto; background-image: url(&apos;project://database/Assets/Dragon_Project/Resources/Img/Sword_Master.png?fileID=2800000&amp;guid=8da5c257b6a8e469086d29193f760b0f&amp;type=3#Sword_Master&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                        <ui:Button text="Next" parse-escape-sequences="true" display-tooltip-when-elided="true" name="main__heroes-next-button" class="unity-custom-label" style="display: none;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgb(200, 176, 20); align-items: center; justify-content: center;">
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" class="heroes-button-size" style="-unity-text-align: middle-center; white-space: nowrap; background-image: url(&apos;project://database/Assets/Art%20Gameplay/VFXTextures/Sprite_Sparkle.png?fileID=2800000&amp;guid=91e65370da8534f5bb473b317a9f422d&amp;type=3#Sprite_Sparkle&apos;); margin-top: 15px; margin-right: 15px; margin-bottom: 15px; margin-left: 15px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" class="heroes-button-size" style="background-image: url(&apos;project://database/Assets/Art%20Gameplay/VFXTextures/Sprite_Sparkle.png?fileID=2800000&amp;guid=91e65370da8534f5bb473b317a9f422d&amp;type=3#Sprite_Sparkle&apos;); margin-top: 15px; margin-right: 15px; margin-bottom: 15px; margin-left: 15px;" />
+                    </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
