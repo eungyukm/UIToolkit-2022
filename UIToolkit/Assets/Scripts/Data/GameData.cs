@@ -47,7 +47,8 @@ namespace UIToolkitDemo
 
             this.isSlideToggled = false;
             this.isToggled = false;
-
+            
+            Debug.Log("");
         }
 
         public string ToJson()
