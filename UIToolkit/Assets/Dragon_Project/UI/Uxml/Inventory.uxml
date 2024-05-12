@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; width: 100%; height: 100%; align-items: center; justify-content: center; align-self: auto;">
+        <ui:VisualElement style="flex-grow: 1; width: 80%; height: 10%;" />
+        <ui:VisualElement name="inventory-bacground" style="flex-grow: 1; width: 80%; height: 80%; background-color: rgba(183, 41, 41, 0.83);">
+            <ui:VisualElement style="flex-grow: 1; width: 100%; height: 100%;">
+                <ui:VisualElement name="inventory-top-row" style="flex-grow: 1; flex-direction: row; height: 100px; align-items: center; justify-content: center;">
+                    <ui:Label tabindex="-1" text="Gear Inventory" parse-escape-sequences="true" display-tooltip-when-elided="true" name="inventory-title-label" style="width: 90%; height: 100%; -unity-text-align: middle-center; font-size: 50px; -unity-font-style: bold;" />
+                    <ui:Button text="X" parse-escape-sequences="true" display-tooltip-when-elided="true" name="inventory-cancel-button" style="height: 100%; width: 100px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="inventory-contents" style="flex-grow: 1; height: 100%; width: 100%;">
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row;">
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" style="width: 200px; height: 200px; display: flex;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row;">
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row;">
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 200px; height: 200px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; height: 10%; width: 80%;" />
+    </ui:VisualElement>
+</ui:UXML>
